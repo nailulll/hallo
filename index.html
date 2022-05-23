@@ -18,12 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/output.css" />
+    <title>iLuL</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="overflow-x-hidden">
     <!-- header -->
     <header
+      data-aos="fade-down"
       class="fixed z-10 w-full bg-white shadow-md shadow-gray-100 md:bg-opacity-50 md:backdrop-blur-lg"
     >
       <div class="container">
@@ -63,7 +65,7 @@
     <!-- header -->
 
     <!-- hero -->
-    <section class="pt-36 pb-16" id="hero">
+    <section data-aos="fade-in" class="pt-36 pb-16" id="hero">
       <div class="container">
         <div class="mt-16 w-full text-center">
           <h3 class="text-2xl text-primary">
@@ -83,7 +85,10 @@
     <!-- about -->
     <section id="about">
       <div class="flex flex-wrap">
-        <div class="h-[450px] w-full bg-secondary md:w-2/5">
+        <div
+          data-aos="slide-right"
+          class="h-[450px] w-full bg-secondary md:w-2/5"
+        >
           <div class="container py-10">
             <h4 class="text-2xl font-semibold">About Me</h4>
             <p class="my-3 text-base text-gray-600">
@@ -158,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div class="h-[450px] w-full md:w-3/5">
+        <div data-aos="slide-left" class="h-[450px] w-full md:w-3/5">
           <img
             src="img/about.jpg"
             alt="desk"
@@ -172,11 +177,11 @@
     <!-- project -->
     <section id="project" class="bg-secondary pt-32">
       <div class="container">
-        <div class="mb-10">
+        <div data-aos="slide-up" class="mb-10">
           <h1 class="mb-3 text-4xl font-semibold text-primary">Project</h1>
           <h5 class="text-lg font-semibold text-primary">Web Designer</h5>
         </div>
-        <div class="mb-16 flex flex-wrap">
+        <div data-aos="slide-up" class="mb-16 flex flex-wrap">
           <div class="w-full pr-0 md:w-1/2 md:pr-5">
             <img
               src="img/2.png"
@@ -202,7 +207,7 @@
             >
           </div>
         </div>
-        <div class="flex flex-wrap-reverse">
+        <div data-aos="slide-up" class="flex flex-wrap-reverse">
           <div class="w-full pr-0 md:w-1/2 md:pr-5">
             <h2
               class="my-5 text-3xl font-semibold text-primary md:mb-5 md:mt-0"
@@ -234,11 +239,11 @@
     <!-- project secondary -->
     <section class="bg-secondary pt-32">
       <div class="container">
-        <div class="mb-10">
+        <div data-aos="slide-up" class="mb-10">
           <h1 class="mb-3 text-4xl font-semibold text-primary">Project</h1>
           <h5 class="text-lg font-semibold text-primary">Graphic Designer</h5>
         </div>
-        <div class="grid grid-cols-2 gap-5 md:grid-cols-3">
+        <div data-aos="slide-up" class="grid grid-cols-2 gap-5 md:grid-cols-3">
           <div
             class="h-15 group relative aspect-video overflow-hidden transition-all duration-500 hover:scale-95"
           >
@@ -310,87 +315,68 @@
     <!-- tools and skills -->
     <section class="pt-32">
       <div class="container">
-        <div class="mb-10">
-          <h1 class="text-center text-4xl font-semibold text-primary">
-            Skills
-          </h1>
+        <div data-aos="slide-up" class="mb-10">
+          <h1 class="text-4xl font-semibold text-primary">Skills</h1>
         </div>
-        <div class="flex flex-wrap justify-center gap-0 md:gap-x-10 md:gap-y-5">
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">HTML</h1>
-            <p class="my-3 text-sm text-primary">
-              I understand basic HTML like elements, inlines, block elements,
-              forms, colors, HTML 5 structures and more.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">CSS</h1>
-            <p class="my-3 text-sm text-primary">
-              I understand about properties on CSS, position, layout, grid,
-              flexbox, gradient, background, transition, transform and CSS
-              filter.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">Java Script</h1>
-            <p class="my-3 text-sm text-primary">
-              My understanding of java scripts is still basic, such as
-              conditional, loops, function, object, DOM, and ES6.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">Bootstrap</h1>
-            <p class="my-3 text-sm text-primary">
-              I am quite proficient in using Bootstrap, and also I have created
-              an online store website, website portfolio, company profile, using
-              Bootstrap 5.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">Tailwind CSS</h1>
-            <p class="my-3 text-sm text-primary">
-              My understanding of the Tailwind CSS framework is very good, even
-              this portfolio website I created with Tailwind CSS.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">PHP</h1>
-            <p class="my-3 text-sm text-primary">
-              My PHP capabilities are pretty good, I understand about OOP, the
-              Codeigniter 3 framework and I once created a web-based hotel
-              reservation application, as well as a web-based online store.
-            </p>
-          </div>
-          <div
-            class="title mb-10 h-44 w-1/2 rounded-sm px-5 py-3 text-center shadow-sm md:w-1/4"
-          >
-            <h1 class="text-xl font-semibold text-primary">
-              Another My Abilities
-            </h1>
-            <p class="my-3 text-sm text-primary">
-              My other abilities such as Web Design, UI/UX Research, Design
-              Feed, Poster Design, Photo Editing and Video Editing.
-            </p>
-          </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">HTML</h1>
+          <p class="mb-3 text-sm text-primary">
+            I understand basic HTML like elements, inlines, block elements,
+            forms, colors, HTML 5 structures and more.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">CSS</h1>
+          <p class="mb-3 text-sm text-primary">
+            I understand about properties on CSS, position, layout, grid,
+            flexbox, gradient, background, transition, transform and CSS filter.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">Java Script</h1>
+          <p class="mb-3 text-sm text-primary">
+            My understanding of java scripts is still basic, such as
+            conditional, loops, function, object, DOM, and ES6.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">Bootstrap</h1>
+          <p class="mb-3 text-sm text-primary">
+            I am quite proficient in using Bootstrap, and also I have created an
+            online store website, website portfolio, company profile, using
+            Bootstrap 5.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">Tailwind CSS</h1>
+          <p class="mb-3 text-sm text-primary">
+            My understanding of the Tailwind CSS framework is very good, even
+            this portfolio website I created with Tailwind CSS.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">PHP</h1>
+          <p class="mb-3 text-sm text-primary">
+            My PHP capabilities are pretty good, I understand about OOP, the
+            Codeigniter 3 framework and I once created a web-based hotel
+            reservation application, as well as a web-based online store.
+          </p>
+        </div>
+        <div data-aos="slide-up" class="w-full md:w-1/2">
+          <h1 class="text-xl font-semibold text-primary">
+            Another My Abilities
+          </h1>
+          <p class="mb-3 text-sm text-primary">
+            My other abilities such as Web Design, UI/UX Research, Design Feed,
+            Poster Design, Photo Editing and Video Editing.
+          </p>
         </div>
       </div>
     </section>
     <!-- end tools and skills -->
 
     <!-- contact -->
-    <form name="submit-to-google-sheet">
+    <form data-aos="slide-up" name="submit-to-google-sheet">
       <section class="bg-secondary pt-32" id="contact">
         <div class="container">
           <div class="mb-10">
@@ -525,6 +511,12 @@
       </div>
     </footer>
     <!-- end footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
